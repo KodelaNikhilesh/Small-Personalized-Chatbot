@@ -1,0 +1,41 @@
+Step 1: 
+Import nltk
+Import random
+from nltk.chat.util Import Chat, reflections
+
+Step 2:
+Create you own chat line 
+Example:
+paris = [
+    
+    [r"my name is (.*)", ["Hello %1, how can I help you?"]],
+    [r"hi|hello|hey", ["Hello!", "Hey there!", "Hi! How can I assist you?"]],
+    [r"how are you", ["I'm just a bot, but I'm doing great! How about you?"]],
+    [r"what is your name", ["I'm a chatbot, and I'm here to chat with you!"]],
+    [r"where are you from", ["I'm from the digital world!"]],
+    [r"what can you do", ["I can chat with you, answer simple questions, and make your day better!"]],
+    [r"who created you", ["I was created by a developer who loves AI and Python!"]],
+    [r"what is the weather like", ["I'm not connected to live weather data, but you can check a weather website!"]],
+    [r"bye|goodbye", ["Goodbye! Have a great day!", "See you later!"]],
+]
+
+Step 3:
+paris = [
+    
+    [r"my name is (.*)", ["Hello %1, how can I help you?"]]
+]
+
+chatbot = Chat(paris, reflections)
+
+def main():
+  print("Hi, I'm Chatbox. How can I assist you?")
+  while True:
+    user_input = input("You: ")
+    response = chatbot.respond(user_input)
+    print("Chatbot:", response)
+    if user_input.lower() == 'quit':
+      break
+
+Step 4:
+main() #run
+Execute the step line by line 
